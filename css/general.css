@@ -1,0 +1,230 @@
+/* ============================================================
+   BLOQUE 1: CONFIGURACIÓN GENERAL
+   Selector universal, body, fuente, fondo, color e interlineado.
+   ============================================================ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ebe6e6;
+    margin: 0;
+}
+
+/* ============================================================
+   BLOQUE 2: TÍTULOS, PÁRRAFOS Y ENLACES
+   Estilos para h1, h2, h3, p, a y a:hover.
+   ============================================================ */
+
+h1{
+    color:#003b27;
+    font-size: 150%;
+    font-family: sans-serif;
+}
+
+h2{
+    color: #003b27;
+    font-family: sans-serif;
+    font-size: 200%;
+}
+
+h4{
+    color: #003b27;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #003b27;
+}
+
+button:hover {
+    font-size: 15px;
+}
+
+a:hover {
+    font-size: 20px;
+}
+
+.boton-bonito{
+    background-color: #003b27;
+    color: white;
+    padding: 1%;
+}
+
+.perdido{
+    padding: 1%;
+    background-color: rgb(201, 76, 76);
+    color: white;
+    width: auto;
+}
+
+.encontrado{
+    padding: 1%;
+    background-color: #14e7a1;
+    color: white;
+    width: auto;
+}
+
+.fecha{
+    text-align: right;
+}
+
+.descripcion{
+    text-align: center;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#aviso{
+    margin-left: auto;
+}
+
+#paginas{
+    text-align: center;
+}
+
+#paginas a{
+    padding: 20px;
+}
+
+.contenedor-login{
+    display: flex;
+    justify-content: center;
+}
+
+.card-login{
+    background-color: white;
+    padding: 40px;
+    width: 450px;
+    text-align: center;
+}
+
+
+/* ============================================================
+   BLOQUE 3: ELEMENTOS SEMÁNTICOS PRINCIPALES
+   Estilos para header, nav, main, section, article, aside y footer.
+   ============================================================ */
+
+.generico{
+    text-align: center;
+    background-color: white;
+    border: 0;
+    align-items: center;
+}
+
+main{
+    width: 90%;
+    max-width: 1100px;
+    margin: 25px auto;
+}
+
+/* ============================================================
+   BLOQUE 4: MENÚ DE NAVEGACIÓN
+   Estilos para nav, nav a y nav a:hover.
+   ============================================================ */
+
+nav {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nombre{
+    margin-left: auto;
+}
+
+/* ============================================================
+   BLOQUE 5: CONTENIDO Y SECCIONES
+   Estilos para main, section, article y aside.
+   ============================================================ */
+
+.card{
+    background-color: white;
+    border: 2px solid black;
+    width: 15%;
+    margin: 20px;
+    padding: 12px;
+    height: 380px;
+}
+
+details{
+    padding: 1%;
+}
+
+/* ============================================================
+   BLOQUE 6: IMÁGENES Y MULTIMEDIA
+   Estilos para img, figure, figcaption, video, audio e iframe.
+   ============================================================ */
+
+
+
+/* ============================================================
+   BLOQUE 7: LISTAS
+   Estilos para ul, ol y li.
+   ============================================================ */
+
+
+
+/* ============================================================
+   BLOQUE 8: FORMULARIOS
+   Estilos para form, label, input, textarea, select y button.
+   ============================================================ */
+
+.logeo{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input{
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+select{
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+/* ============================================================
+   BLOQUE 9: TABLAS
+   Estilos para table, thead, tbody, tr, th y td.
+   ============================================================ */
+
+#publicados{
+    padding: 5px;
+    align-items: center;
+}
+
+.eliminar {
+    background-color: rgb(236, 121, 121);
+    color: white;
+}
+
+.editar {
+    background-color: rgb(89, 89, 241);
+    color: white;
+}
+
+/* ============================================================
+   BLOQUE 10: PIE DE PÁGINA
+   Estilos para footer, footer p y footer address.
+   ============================================================ */
+
+footer{
+    background-color: white;
+    padding: 3%;
+    display: flexbox;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+

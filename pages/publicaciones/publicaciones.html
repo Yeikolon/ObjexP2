@@ -4,7 +4,7 @@
 <head>
     <title>Objex - Publicaciones</title>
     <meta charset="UTF-8">
-    <link href="../../css/styles.css" rel="stylesheet">
+    <link href="../../css/general.css" rel="stylesheet">
     <link rel="icon" href="../../src/icons/lupa.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -13,16 +13,14 @@
 
     <header>
         <nav>
-            <fieldset class="navegacion">
-                <h1>Objex</h1>
-                <a href="../inicio/inicio.html" title="Página principal"> <i class="fa-solid fa-house"></i> Inicio</a>
-                <a href="../publicaciones/publicaciones.html" style="text-decoration:underline;" title="Mira los objetos encontrados"><i
-                        class="fa-solid fa-list"></i> Publicaciones</a>
-                <a href="postex.html" title="Mira los posts"><i class="fa-solid fa-blog"></i> Postex</a>
-                <a href="../perfil/perfil.html" title="Revisa tu perfil"><i class="fa-solid fa-circle-user"></i> Perfil</a>
-                <a href="../../index.html"><i class="fa-solid fa-right-from-bracket"></i> Cerrar Sesión</a>
-                <label class="nombre">Yeiko Velez</label>
-            </fieldset>
+            <h1>Objex</h1>
+            <a href="../inicio/inicio.html" title="Página principal"> <i class="fa-solid fa-house"></i> Inicio</a>
+            <a href="../publicaciones/publicaciones.html" style="text-decoration:underline;"
+                title="Mira los objetos encontrados"><i class="fa-solid fa-list"></i> Publicaciones</a>
+            <a href="postex.html" title="Mira los posts"><i class="fa-solid fa-blog"></i> Postex</a>
+            <a href="../perfil/perfil.html" title="Revisa tu perfil"><i class="fa-solid fa-circle-user"></i> Perfil</a>
+            <a href="../../index.html"><i class="fa-solid fa-right-from-bracket"></i> Cerrar Sesión</a>
+            <label class="nombre">Yeiko Velez</label>
         </nav>
     </header>
 
@@ -44,7 +42,8 @@
                     placeholder="¿Qué estas buscando? Ej. Mochila, llaves, credencial..."
                     style="padding: 1%; width: 70%;">
 
-                <button type="submit" class="boton-generico"><i class="fa-solid fa-magnifying-glass" style="color: rgb(255, 255, 255);"></i> Buscar</button>
+                <button type="submit" class="boton-bonito"><i class="fa-solid fa-magnifying-glass"
+                        style="color: rgb(255, 255, 255);"></i> Buscar</button>
 
                 <br><br>
 
@@ -99,124 +98,117 @@
 
         <br>
 
-        <section class="recientes">
-            <fieldset class="recientes">
-                <h3 style="text-align: center;">Publicaciones Recientes</h3>
+        <section class="generico">
 
-                <section class="contenedor">
+            <h3 style="text-align: center;">Publicaciones Recientes</h3>
 
-                    <article class="card"><img src="../../src/img/mochila.jpeg" alt="Mochila" width="100%" height="50%">
-                        <section class="texto">
-                            <label class="perdido">Perdido</label>
-                            <label class="fecha">Hace 2
-                                horas</label>
-                        </section>
-                        <h4>Mochila Perdida</h4>
-                        <p class="descripcion">Mochila negra con un cuaderno dentro...</p><a>Ver Detalles...</a><br><br>
-                    </article>
+            <section class="contenedor">
 
-                    <article class="card"><img src="../../src/img/cargador.jpeg" alt="Cargador" width="100%"
-                            height="50%">
-                        <section class="texto">
-                            <label class="perdido">Perdido</label>
-                            <label class="fecha">Ayer</label>
-                        </section>
-                        <h4>Cargador</h4>
-                        <p class="descripcion">Cargador Tipo C</p><a>Ver Detalles...</a><br><br>
-                    </article>
+                <article class="card"><img src="../../src/img/mochila.jpeg" alt="Mochila" width="100%" height="50%">
+                    <section class="texto">
+                        <label class="perdido">Perdido</label>
+                        <label class="fecha">Hace 2
+                            horas</label>
+                    </section>
+                    <h4>Mochila Perdida</h4>
+                    <p class="descripcion">Mochila negra con un cuaderno dentro...</p><a>Ver Detalles...</a><br><br>
+                </article>
 
-                    <article class="card"><img src="../../src/img/llaves.jpeg" alt="llaves" width="100%" height="50%">
-                        <section class="texto">
-                            <label class="encontrado">Encontrado</label>
-                            <label class="fecha">Hace 1
-                                hora</label>
-                        </section>
-                        <h4>Llaves</h4>
-                        <p class="descripcion">Llaves encontradas en el estacionamiento</p><a>Ver
-                            Detalles...</a><br><br>
-                    </article>
+                <article class="card"><img src="../../src/img/cargador.jpeg" alt="Cargador" width="100%" height="50%">
+                    <section class="texto">
+                        <label class="perdido">Perdido</label>
+                        <label class="fecha">Ayer</label>
+                    </section>
+                    <h4>Cargador</h4>
+                    <p class="descripcion">Cargador Tipo C</p><a>Ver Detalles...</a><br><br>
+                </article>
 
-                    <article class="card"><img src="../../src/img/usb.webp" alt="USB" width="100%" height="50%">
-                        <section class="texto">
-                            <label class="perdido">Perdido</label>
-                            <label class="fecha">Ayer</label>
-                        </section>
-                        <h4>USB</h4>
-                        <p class="descripcion">USB encontrada en el LAB-02</p><a>Ver Detalles...</a><br><br>
-                    </article>
+                <article class="card"><img src="../../src/img/llaves.jpeg" alt="llaves" width="100%" height="50%">
+                    <section class="texto">
+                        <label class="encontrado">Encontrado</label>
+                        <label class="fecha">Hace 1
+                            hora</label>
+                    </section>
+                    <h4>Llaves</h4>
+                    <p class="descripcion">Llaves encontradas en el estacionamiento</p><a>Ver
+                        Detalles...</a><br><br>
+                </article>
 
-                </section><br>
-                <section class="contenedor">
+                <article class="card"><img src="../../src/img/usb.webp" alt="USB" width="100%" height="50%">
+                    <section class="texto">
+                        <label class="perdido">Perdido</label>
+                        <label class="fecha">Ayer</label>
+                    </section>
+                    <h4>USB</h4>
+                    <p class="descripcion">USB encontrada en el LAB-02</p><a>Ver Detalles...</a><br><br>
+                </article>
 
-                    <article class="card"><img src="../../src/img/audifonos.jpeg" alt="Audifonos" width="100%"
-                            height="50%">
-                        <section class="texto">
-                            <label class="perdido">Perdido</label>
-                            <label class="fecha">Hace 4
-                                horas</label>
-                        </section>
-                        <h4>Audifonos</h4>
-                        <p class="descripcion">Audifonos Inalambricos negros</p><a>Ver Detalles...</a><br><br>
-                    </article>
+            </section><br>
+            <section class="contenedor">
 
-                    <article class="card"><img src="../../src/img/bata.jpeg" alt="Bata" width="100%" height="50%">
-                        <section class="texto"><label class="perdido">Perdido</label>
-                            <label class="fecha">Hace 1
-                                semana</label>
-                        </section>
-                        <h4>Bata</h4>
-                        <p class="descripcion">Bata de laboratorio</p><a>Ver Detalles...</a><br><br>
-                    </article>
+                <article class="card"><img src="../../src/img/audifonos.jpeg" alt="Audifonos" width="100%" height="50%">
+                    <section class="texto">
+                        <label class="perdido">Perdido</label>
+                        <label class="fecha">Hace 4
+                            horas</label>
+                    </section>
+                    <h4>Audifonos</h4>
+                    <p class="descripcion">Audifonos Inalambricos negros</p><a>Ver Detalles...</a><br><br>
+                </article>
 
-                    <article class="card"><img src="../../src/img/cadena.jpeg" alt="Cadena" width="100%" height="50%">
-                        <section class="texto"><label class="encontrado">Encontrado</label><label class="fecha">Hace 4
-                                dias</label></section>
-                        <h4>Cadena</h4>
-                        <p class="descripcion">Cadena en el baño</p><a>Ver Detalles...</a><br><br>
-                    </article>
+                <article class="card"><img src="../../src/img/bata.jpeg" alt="Bata" width="100%" height="50%">
+                    <section class="texto"><label class="perdido">Perdido</label>
+                        <label class="fecha">Hace 1
+                            semana</label>
+                    </section>
+                    <h4>Bata</h4>
+                    <p class="descripcion">Bata de laboratorio</p><a>Ver Detalles...</a><br><br>
+                </article>
 
-                    <article class="card"><img src="../../src/img/mouse.webp" alt="Mouse" width="100%" height="50%">
-                        <section class="texto"><label class="encontrado">Encontrado</label><label
-                                class="fecha">Ayer</label></section>
-                        <h4>Mouse</h4>
-                        <p class="descripcion">Mouse tirado en el cesped</p><a>Ver Detalles...</a><br><br>
-                    </article>
+                <article class="card"><img src="../../src/img/cadena.jpeg" alt="Cadena" width="100%" height="50%">
+                    <section class="texto"><label class="encontrado">Encontrado</label><label class="fecha">Hace 4
+                            dias</label></section>
+                    <h4>Cadena</h4>
+                    <p class="descripcion">Cadena en el baño</p><a>Ver Detalles...</a><br><br>
+                </article>
 
-                </section><br>
-                <section class="contenedor">
-                    <article class="card"><img src="../../src/img/paraguas.jpeg" alt="Paraguas" width="100%"
-                            height="50%">
-                        <section class="texto"><label class="perdido">Perdido</label><label class="fecha">Hace 2
-                                semanas</label></section>
-                        <h4>Paraguas</h4>
-                        <p class="descripcion">Tiene un hueco</p><a>Ver Detalles...</a><br><br>
-                    </article>
+                <article class="card"><img src="../../src/img/mouse.webp" alt="Mouse" width="100%" height="50%">
+                    <section class="texto"><label class="encontrado">Encontrado</label><label class="fecha">Ayer</label>
+                    </section>
+                    <h4>Mouse</h4>
+                    <p class="descripcion">Mouse tirado en el cesped</p><a>Ver Detalles...</a><br><br>
+                </article>
 
-                    <article class="card"><img src="../../src/img/telefono.jpeg" alt="Telefono" width="100%"
-                            height="50%">
-                        <section class="texto"><label class="perdido">Perdido</label><label class="fecha">Hace 2
-                                horas</label></section>
-                        <h4>Teléfono</h4>
-                        <p class="descripcion">Cambio por dos almuerzos</p><a>Ver Detalles...</a><br><br>
-                    </article>
+            </section><br>
+            <section class="contenedor">
+                <article class="card"><img src="../../src/img/paraguas.jpeg" alt="Paraguas" width="100%" height="50%">
+                    <section class="texto"><label class="perdido">Perdido</label><label class="fecha">Hace 2
+                            semanas</label></section>
+                    <h4>Paraguas</h4>
+                    <p class="descripcion">Tiene un hueco</p><a>Ver Detalles...</a><br><br>
+                </article>
 
-                    <article class="card"><img src="../../src/img/tomatodo.jpeg" alt="Tomatodo" width="100%"
-                            height="50%">
-                        <section class="texto"><label class="perdido">Perdido</label><label class="fecha">Hace 2
-                                horas</label></section>
-                        <h4>Tomatodo</h4>
-                        <p class="descripcion">Dice Jhon Herrera</p><a>Ver Detalles...</a><br><br>
-                    </article>
+                <article class="card"><img src="../../src/img/telefono.jpeg" alt="Telefono" width="100%" height="50%">
+                    <section class="texto"><label class="perdido">Perdido</label><label class="fecha">Hace 2
+                            horas</label></section>
+                    <h4>Teléfono</h4>
+                    <p class="descripcion">Cambio por dos almuerzos</p><a>Ver Detalles...</a><br><br>
+                </article>
 
-                    <article class="card"><img src="../../src/img/cuaderno.jpeg" alt="Cuaderno" width="100%"
-                            height="50%">
-                        <section class="texto"><label class="perdido">Perdido</label><label class="fecha">Ayer</label>
-                        </section>
-                        <h4>Cuaderno</h4>
-                        <p class="descripcion">Es de química orgánica</p><a>Ver Detalles...</a><br><br>
-                    </article>
-                </section>
-            </fieldset>
+                <article class="card"><img src="../../src/img/tomatodo.jpeg" alt="Tomatodo" width="100%" height="50%">
+                    <section class="texto"><label class="perdido">Perdido</label><label class="fecha">Hace 2
+                            horas</label></section>
+                    <h4>Tomatodo</h4>
+                    <p class="descripcion">Dice Jhon Herrera</p><a>Ver Detalles...</a><br><br>
+                </article>
+
+                <article class="card"><img src="../../src/img/cuaderno.jpeg" alt="Cuaderno" width="100%" height="50%">
+                    <section class="texto"><label class="perdido">Perdido</label><label class="fecha">Ayer</label>
+                    </section>
+                    <h4>Cuaderno</h4>
+                    <p class="descripcion">Es de química orgánica</p><a>Ver Detalles...</a><br><br>
+                </article>
+            </section>
         </section>
 
         <br>
@@ -238,7 +230,7 @@
 
     <br>
 
-   <footer>
+    <footer>
         <section class="pie">
             <h3>Objex</h3>
             <a id="aviso">Aviso de privacidad</a> |
@@ -246,7 +238,8 @@
             <a href="https://www.google.com/maps/place/Universidad+de+las+Fuerzas+Armadas+-+ESPE+-+Santo+Domingo/@-0.4127086,-79.3189988,16z/data=!4m10!1m2!2m1!1sUNIVERSIDAD+DE+LAS+FUERZAS+ARMADAS+ESPE!3m6!1s0x91d53237044f39bb:0x24ed753bfe34c98b!8m2!3d-0.4127086!4d-79.3094716!15sCidVTklWRVJTSURBRCBERSBMQVMgRlVFUlpBUyBBUk1BREFTIEVTUEUiA4gBAVopIid1bml2ZXJzaWRhZCBkZSBsYXMgZnVlcnphcyBhcm1hZGFzIGVzcGWSARFwdWJsaWNfdW5pdmVyc2l0eZoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VSQmJHTm1kRVZSRUFF4AEA-gEECAAQQw!16s%2Fg%2F11f11shpmz?entry=ttu&g_ep=EgoyMDI2MDUxNy4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"> <i class="fa-solid fa-location-dot"> </i> Mapa del sitio</a> |
             <a>Soporte técnico</a> |
-            <a href="../extras/preguntas-frecuentes.html"> <i class="fa-solid fa-question" style="padding: 1px;"></i> Preguntas frecuentes</a>
+            <a href="../extras/preguntas-frecuentes.html"> <i class="fa-solid fa-question" style="padding: 1px;"></i>
+                Preguntas frecuentes</a>
         </section>
 
         <p style="color: rgb(97, 96, 96);">La herramienta oficial de la comunidad ESPE para la gestión<br>y recuperación

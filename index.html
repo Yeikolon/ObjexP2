@@ -6,27 +6,22 @@
     <title>Objex - Iniciar Sesión</title>
     <meta charset="UTF-8">
 
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
 
-    <link rel="icon"
-        href="src/icons/lupa.png"
-        type="image/x-icon">
+    <link rel="icon" href="src/icons/lupa.png" type="image/x-icon">
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
 <body>
     <header>
         <nav>
-            <fieldset class="navegacion">
-
-                <h1>Objex</h1>
-                <a href="#" style="cursor: default; pointer-events: none;"> <i class="fa-solid fa-house"></i> Inicio</a>
-                <a href="#" style="cursor: default; pointer-events: none;"><i class="fa-solid fa-list"></i> Publicaciones</a>
-                <a href="#" style="pointer-events: none; cursor: default;"><i class="fa-solid fa-blog"></i> Postex</a>
-            </fieldset>
+            <h1>Objex</h1>
+            <a href="#" style="cursor: default; pointer-events: none;"> <i class="fa-solid fa-house"></i> Inicio</a>
+            <a href="#" style="cursor: default; pointer-events: none;"><i class="fa-solid fa-list"></i>
+                Publicaciones</a>
+            <a href="#" style="pointer-events: none; cursor: default;"><i class="fa-solid fa-blog"></i> Postex</a>
         </nav>
     </header>
 
@@ -42,18 +37,16 @@
                     y gestionar tus objetos.
                 </p>
 
-                <form method="post" action="pages/inicio/inicio.html">
+                <form method="post" action="pages/inicio/inicio.html" class="logeo">
 
                     <label for="correo">Correo institucional</label>
 
-                    <input type="email"
-                        id="correo"
-                        name="correo"
-                        placeholder="ejemplo@espe.edu.ec">
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@espe.edu.ec">
 
-                    <label for="contrasena"> <i class="fa-solid fa-lock"></i>  Contraseña</label>
-                    <input type="password" id="contrasena" name="contrasena" placeholder=" Ingrese su contraseña" minlength="8" maxlength="16">
-                    <button type="submit" class="boton-generico">Iniciar sesión</button>
+                    <label for="contrasena"> <i class="fa-solid fa-lock"></i> Contraseña</label>
+                    <input type="password" id="contrasena" name="contrasena" placeholder=" Ingrese su contraseña"
+                        minlength="8" maxlength="16">
+                    <button type="submit" class="boton-bonito">Iniciar sesión</button>
 
                     <p class="registro-texto">
                         ¿No tienes cuenta?
