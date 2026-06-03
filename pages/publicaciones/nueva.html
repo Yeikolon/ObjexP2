@@ -29,13 +29,13 @@
             <section class="card-login">
                 <form method="get">
                     <label for="titulo">Titulo de publicación</label>
-                    <input type="text" id="titulo" name="titulo" placeholder="Escriba aquí">
+                    <input type="text" id="titulo" name="titulo" placeholder="Escriba aquí" required>
 
                     <label for="descripcion">Descripción del objeto</label>
                     <textarea id="descripcion" name="descripcion" placeholder="Escriba aqui"></textarea>
 
                     <label for="categoria">Categoría</label>
-                    <select id="categoria" name="categoria">
+                    <select id="categoria" name="categoria" required>
                         <option value="todos">Todas las categorías</option>
                         <option value="tecnologia">Tecnología</option>
                         <option value="quimica">Objetos químicos</option>
@@ -46,7 +46,7 @@
                     </select>
 
                     <label for="ubicacion"><b>Ubicación</b></label>
-                    <select id="ubicacion" name="ubicacion">
+                    <select id="ubicacion" name="ubicacion" required>
                         <option value="toda">Toda la universidad</option>
                         <option value="estudio">Área de estudio</option>
                         <option value="bar">Bar</option>
@@ -60,10 +60,10 @@
                     </select>
 
                     <label for="foto">Imagen</label>
-                    <input type="file" name="foto" id="foto" accept="image/*">
+                    <input type="file" name="foto" id="foto" accept="image/*" required>
 
                     <label for="contacto">Contacto</label>
-                    <input type="number" name="contacto" id="contacto" placeholder="Ingrese su número celular" max="10">
+                    <input type="number" name="contacto" id="contacto" placeholder="Ingrese su número celular" max="10" required>
 
                     <br>
                     <button type="submit" class="boton-bonito">Publicar</button>
@@ -85,10 +85,10 @@
                 Preguntas frecuentes</a>
         </section>
 
-        <p style="color: rgb(97, 96, 96);">La herramienta oficial de la comunidad ESPE para la gestión<br>y recuperación
+        <p>La herramienta oficial de la comunidad ESPE para la gestión<br>y recuperación
             de objetos extraviados dentro del campus</p>
 
-        <p style="color: rgb(97, 96, 96);">2026 Objex - Universidad de las Fuerzas Armadas</p>
+        <p>2026 Objex - Universidad de las Fuerzas Armadas</p>
     </footer>
 
 </body>

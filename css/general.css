@@ -57,14 +57,18 @@ a:hover {
     padding: 1%;
     background-color: rgb(201, 76, 76);
     color: white;
-    width: auto;
+    max-width: 90px;
+    width: 100%;
+    border-radius: 20px;
 }
 
 .encontrado{
     padding: 1%;
     background-color: #14e7a1;
     color: white;
-    width: auto;
+     max-width: 90px;
+    width: 100%;
+    border-radius: 20px;
 }
 
 .texto{
@@ -113,8 +117,15 @@ a:hover {
 
 button{
     margin-top: 10px;
+    border-radius: 14px;
 }
 
+hr{
+    width: 70%;
+    color: #003b27;
+    height: 5px;
+    background-color: #003b27;
+}
 
 /* ============================================================
    BLOQUE 3: ELEMENTOS SEMÁNTICOS PRINCIPALES
@@ -126,12 +137,27 @@ button{
     background-color: white;
     border: 0;
     align-items: center;
+    padding: 10px;
 }
 
 main{
     width: 90%;
     max-width: 1400px;
     margin: 25px auto;
+    padding: 7px;
+}
+
+main p{
+    font-size: 125%; 
+    color: rgb(146, 148, 150);
+}
+
+#perfil-contenedor{
+    color: black;
+}
+
+section{
+    border-radius: 20px;
 }
 
 /* ============================================================
@@ -163,6 +189,7 @@ nav {
     margin: 20px;
     padding: 12px;
     height: 380px;
+    border-radius: 20px;
 }
 
 details{
@@ -194,6 +221,7 @@ details{
 
 label{
     font-weight: bold;
+    text-align: center;
 }
 
 input, select, textarea{
@@ -202,6 +230,7 @@ input, select, textarea{
     margin-top: 15px;
     border: 1px solid #ccc;
     font-size: 15px;
+    border-radius: 15px;
 }
 
 input[type = "checkbox"], input[type="radio"]{
@@ -219,7 +248,11 @@ input:focus, select:focus, textarea:focus{
 }
 
 input:required, select:required, textarea:required{
-    border-left: 5px solid #dba112;
+    border-left: 5px solid #003b27;
+}
+
+form input, select, textarea{
+    margin-bottom: 20px;
 }
 
 /* ============================================================
@@ -282,5 +315,9 @@ footer{
     align-items: center;
     gap: 30px;
     text-align: center;
+}
+
+footer p{
+    color: rgb(97, 96, 96);
 }
 
