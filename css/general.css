@@ -3,7 +3,7 @@
    Selector universal, body, fuente, fondo, color e interlineado.
    ============================================================ */
 
-* {
+*{
     box-sizing: border-box;
 }
 
@@ -111,6 +111,10 @@ a:hover {
     text-align: center;
 }
 
+button{
+    margin-top: 10px;
+}
+
 
 /* ============================================================
    BLOQUE 3: ELEMENTOS SEMÁNTICOS PRINCIPALES
@@ -185,19 +189,37 @@ details{
    ============================================================ */
 
 .logeo{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    margin-top: 12px;
 }
 
-input{
-    padding: 12px;
-    border: 1px solid #ccc;
+label{
+    font-weight: bold;
 }
 
-select{
-    padding: 12px;
+input, select, textarea{
+    width: 100%;
+    padding: 9px;
+    margin-top: 15px;
     border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+input[type = "checkbox"], input[type="radio"]{
+    width: auto;
+    margin-right: 6px;
+}
+
+textarea{
+    resize: vertical;
+}
+
+input:focus, select:focus, textarea:focus{
+    outline: 2px solid #003b27;
+    border-color: #003b27;
+}
+
+input:required, select:required, textarea:required{
+    border-left: 5px solid #dba112;
 }
 
 /* ============================================================
@@ -205,9 +227,25 @@ select{
    Estilos para table, thead, tbody, tr, th y td.
    ============================================================ */
 
+
+
 #publicados{
     padding: 5px;
     align-items: center;
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: #003b27;
+    color: white;
+    padding: 10px;
+}
+
+td{
+    border: 1px solid #ddd;
+    padding: 10px;
 }
 
 .eliminar {
@@ -218,6 +256,18 @@ select{
 .editar {
     background-color: rgb(89, 89, 241);
     color: white;
+}
+
+/* ============================================================
+   BLOQUE 9: Details.
+   ============================================================ */
+
+details{
+    background-color: #f4f6f8;
+    padding:12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
 }
 
 /* ============================================================
