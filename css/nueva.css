@@ -1,0 +1,11 @@
+.contenedor-nueva{
+    display: flex;
+    justify-content: center;
+}
+
+.card-nueva{
+    background-color: white;
+    padding: 40px;
+    width: 450px;
+    text-align: center;
+}

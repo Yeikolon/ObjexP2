@@ -12,6 +12,11 @@ body {
     margin: 0;
 }
 
+::selection{
+    color: white;
+    background-color: #003b27;
+}
+
 /* ============================================================
    BLOQUE 2: TÍTULOS, PÁRRAFOS Y ENLACES
    Estilos para h1, h2, h3, p, a y a:hover.
@@ -34,7 +39,7 @@ h4{
     text-align: center;
 }
 
-a {
+a{
     text-decoration: none;
     color: #003b27;
 }
@@ -53,66 +58,8 @@ a:hover {
     padding: 1%;
 }
 
-.perdido{
-    padding: 1%;
-    background-color: rgb(201, 76, 76);
-    color: white;
-    max-width: 90px;
-    width: 100%;
-    border-radius: 20px;
-}
-
-.encontrado{
-    padding: 1%;
-    background-color: #14e7a1;
-    color: white;
-     max-width: 90px;
-    width: 100%;
-    border-radius: 20px;
-}
-
-.texto{
-    display: flex;
-    justify-content: space-between;
-}
-
-.fecha{
-    text-align: right;
-}
-
-.descripcion{
-    text-align: center;
-}
-
-.contenedor{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
 #aviso{
     margin-left: auto;
-}
-
-#paginas{
-    text-align: center;
-}
-
-#paginas a{
-    padding: 20px;
-}
-
-.contenedor-login{
-    display: flex;
-    justify-content: center;
-}
-
-.card-login{
-    background-color: white;
-    padding: 40px;
-    width: 450px;
-    text-align: center;
 }
 
 button{
@@ -135,9 +82,9 @@ hr{
 .generico{
     text-align: center;
     background-color: white;
-    border: 0;
     align-items: center;
     padding: 10px;
+    border-radius: 20px;
 }
 
 main{
@@ -150,14 +97,6 @@ main{
 main p{
     font-size: 125%; 
     color: rgb(146, 148, 150);
-}
-
-#perfil-contenedor{
-    color: black;
-}
-
-section{
-    border-radius: 20px;
 }
 
 /* ============================================================
@@ -182,20 +121,6 @@ nav {
    Estilos para main, section, article y aside.
    ============================================================ */
 
-.card{
-    background-color: white;
-    border: 2px solid black;
-    width: 18%;
-    margin: 20px;
-    padding: 12px;
-    height: 380px;
-    border-radius: 20px;
-}
-
-details{
-    padding: 1%;
-}
-
 /* ============================================================
    BLOQUE 6: IMÁGENES Y MULTIMEDIA
    Estilos para img, figure, figcaption, video, audio e iframe.
@@ -214,10 +139,6 @@ details{
    BLOQUE 8: FORMULARIOS
    Estilos para form, label, input, textarea, select y button.
    ============================================================ */
-
-.logeo{
-    margin-top: 12px;
-}
 
 label{
     font-weight: bold;
@@ -260,16 +181,6 @@ form input, select, textarea{
    Estilos para table, thead, tbody, tr, th y td.
    ============================================================ */
 
-
-
-#publicados{
-    padding: 5px;
-    align-items: center;
-    width: 100%;
-    background-color: white;
-    border-collapse: collapse;
-}
-
 th{
     background-color: #003b27;
     color: white;
@@ -279,16 +190,6 @@ th{
 td{
     border: 1px solid #ddd;
     padding: 10px;
-}
-
-.eliminar {
-    background-color: rgb(236, 121, 121);
-    color: white;
-}
-
-.editar {
-    background-color: rgb(89, 89, 241);
-    color: white;
 }
 
 /* ============================================================
@@ -311,7 +212,8 @@ details{
 footer{
     background-color: white;
     padding: 3%;
-    display: flexbox;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 30px;
     text-align: center;

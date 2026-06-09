@@ -1,0 +1,33 @@
+.contenedor-perfil{
+    display: flex;
+    justify-content: center;
+}
+
+.card-perfil{
+    background-color: white;
+    padding: 40px;
+    width: 450px;
+    text-align: center;
+}
+
+#perfil-contenedor{
+    color: black;
+}
+
+#publicados{
+    padding: 5px;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+}
+
+.eliminar {
+    background-color: rgb(236, 121, 121);
+    color: white;
+}
+
+.editar {
+    background-color: rgb(89, 89, 241);
+    color: white;
+}

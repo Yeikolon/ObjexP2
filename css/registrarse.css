@@ -1,0 +1,15 @@
+.contenedor-login{
+    display: flex;
+    justify-content: center;
+}
+
+.card-login{
+    background-color: white;
+    padding: 40px;
+    width: 450px;
+    text-align: center;
+}
+
+.logeo{
+    margin-top: 12px;
+}
