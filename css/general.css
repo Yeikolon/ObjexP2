@@ -58,10 +58,6 @@ a:hover {
     padding: 1%;
 }
 
-#aviso{
-    margin-left: auto;
-}
-
 button{
     margin-top: 10px;
     border-radius: 14px;
@@ -92,11 +88,6 @@ main{
     max-width: 1400px;
     margin: 25px auto;
     padding: 7px;
-}
-
-main p{
-    font-size: 125%; 
-    color: rgb(146, 148, 150);
 }
 
 /* ============================================================
