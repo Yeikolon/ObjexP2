@@ -24,25 +24,89 @@
             <label class="nombre">Yeiko Velez</label>
         </nav>
     </header>
-    <br>
 
     <main>
         <section class="generico" style="padding: 3px;">
-            <h2>Posts de objetos perdidos</h2>
-            <p class="info">Realiza un post para reportar algun objeto perdido</p>
+            <h2>Postex - Anuncios de la comunidad</h2>
+            <p class="info">Comparte información sobre objetos perdidos o encontrados</p>
 
             <form method="get" action="#">
-                <input type="text" id="buscar" name="buscar" placeholder="Escriba el postex a buscar" style="padding: 1%;
-                width: 70%;">
-                <button type="submit" class="boton-bonito"><i class="fa-solid fa-magnifying-glass"
-                        style="color: rgb(255, 255, 255);"></i> Buscar</button>
+                <input type="text" placeholder="Buscar anuncios...">
+                <select>
+                    <option>Todos</option>
+                    <option>Perdidos</option>
+                    <option>Encontrados</option>
+                </select>
+                <button class="boton-bonito" type="submit">Buscar</button>
+                <button class="boton-bonito" type="button">+ Nuevo Post</button>
+                <br>
             </form>
 
-            <br>
+        </section>
+        <br>
+
+        <section class="generico">
+            <section id="contenedor-anuncios">
+                <section class="card-post">
+                    <div class="post-encabezado">
+                        <img src="../../src/icons/chino.ico">&nbsp
+                        <label> Heung Min-Son </label>
+                        <label class="nombre"> KEONJAE MATIAS LEE FRANCO </label>
+                        <label class="fecha"> Hace 2h </label>
+                        <a><i class="fa-solid fa-angles-down"></i></a>
+                    </div>
+                    <div class="post-info">
+                        <p>Se me ha perdido mi visa en el bloque b en la inauguración del mundialito espe</p>
+                    </div>
+                    <div class="post-pie">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-comment"></i>
+                    </div>
+                </section>
+
+                <section class="card-post">
+                    <div class="post-encabezado">
+                        <img src="../../src/icons/chambeo.ico">&nbsp
+                        <label> Chambeo </label>
+                        <label class="nombre"> AXEL JOSUE MOLINA VERA </label>
+                        <label class="fecha"> Hace 2d </label>
+                        <a><i class="fa-solid fa-angles-down"></i></a>
+                    </div>
+                    <div class="post-info">
+                        <p>Mi certificado ha desaparecido luego de que se lo puso en juego en la competencia que tuve contra elkin</p>
+                    </div>
+                    <div class="post-pie">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-comment"></i>
+                    </div>
+                </section>
+
+                <section class="card-post">
+                    <div class="post-encabezado">
+                        <img src="../../src/icons/usuario.png">&nbsp
+                        <label> Corrupción </label>
+                        <label class="nombre"> RUTH ESTEFANY BRIONES MOREIRA </label>
+                        <label class="fecha"> Hace 10d </label>
+                        <a><i class="fa-solid fa-angles-down"></i></a>
+                    </div>
+                    <div class="post-info">
+                        <p>Se me perdio mi amiga Anahí en Luz de América</p>
+                    </div>
+                    <div class="post-pie">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-comment"></i>
+                    </div>
+                </section>
+            </section>
         </section>
 
-        <section class="generico" style="padding: 3px;">
-            PUBLICACION 1
+        <section id="paginas">
+            <a><</a>
+            <a style="text-decoration: underline;">1</a>
+            <a>2</a>
+            <a>3</a>
+            <a>></a>
+        </section>
 
         </section>
     </main>
