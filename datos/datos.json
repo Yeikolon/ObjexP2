@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "titulo": "Mochila Perdida",
+    "descripcion": "Mochila negra con un cuaderno dentro",
+    "estado": "perdido",
+    "categoria": "accesorio",
+    "ubicacion": "Aula del Bloque A",
+    "fecha": "Hace 2 horas",
+    "imagen": "src/img/mochila.jpeg"
+  },
+  {
+    "id": 2,
+    "titulo": "Cargador",
+    "descripcion": "Cargador Tipo C",
+    "estado": "perdido",
+    "categoria": "tecnologia",
+    "ubicacion": "No especificada",
+    "fecha": "Ayer",
+    "imagen": "src/img/cargador.jpeg"
+  },
+  {
+    "id": 3,
+    "titulo": "Llaves",
+    "descripcion": "Llaves encontradas en el estacionamiento",
+    "estado": "encontrado",
+    "categoria": "accesorio",
+    "ubicacion": "Estacionamiento",
+    "fecha": "Hace 1 hora",
+    "imagen": "src/img/llaves.jpeg"
+  }
+]

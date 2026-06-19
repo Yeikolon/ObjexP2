@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<publicaciones>
+
+    <publicacion>
+        <id>1</id>
+        <titulo>Mochila Perdida</titulo>
+        <descripcion>Mochila negra con un cuaderno dentro</descripcion>
+        <estado>perdido</estado>
+        <categoria>accesorio</categoria>
+        <ubicacion>Aula del Bloque A</ubicacion>
+        <fecha>Hace 2 horas</fecha>
+        <imagen>src/img/mochila.jpeg</imagen>
+    </publicacion>
+
+    <publicacion>
+        <id>2</id>
+        <titulo>Cargador</titulo>
+        <descripcion>Cargador Tipo C</descripcion>
+        <estado>perdido</estado>
+        <categoria>tecnologia</categoria>
+        <ubicacion>No especificada</ubicacion>
+        <fecha>Ayer</fecha>
+        <imagen>src/img/cargador.jpeg</imagen>
+    </publicacion>
+
+    <publicacion>
+        <id>3</id>
+        <titulo>Llaves</titulo>
+        <descripcion>Llaves encontradas en el estacionamiento</descripcion>
+        <estado>encontrado</estado>
+        <categoria>accesorio</categoria>
+        <ubicacion>Estacionamiento</ubicacion>
+        <fecha>Hace 1 hora</fecha>
+        <imagen>src/img/llaves.jpeg</imagen>
+    </publicacion>
+
+</publicaciones>

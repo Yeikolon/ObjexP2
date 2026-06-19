@@ -1,300 +1,371 @@
 /* ============================================================
-   BLOQUE 1: CONFIGURACIÓN GENERAL
-   Selector universal, body, fuente, fondo, color e interlineado.
+   CONFIGURACIÓN GENERAL — Mobile First
    ============================================================ */
 
-*{
+* {
     box-sizing: border-box;
 }
 
 body {
     background-color: #ebe6e6;
     margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
-::selection{
+::selection {
     color: white;
     background-color: #003b27;
 }
 
 /* ============================================================
-   BLOQUE 2: TÍTULOS, PÁRRAFOS Y ENLACES
-   Estilos para h1, h2, h3, p, a y a:hover.
+   TÍTULOS Y TEXTO
    ============================================================ */
 
-h1{
-    color:#003b27;
-    font-size: 150%;
+h1 {
+    color: #003b27;
+    font-size: 1.3rem;
     font-family: sans-serif;
+    margin: 0 0 0.5rem;
 }
 
-h2{
+h2 {
     color: #003b27;
     font-family: sans-serif;
-    font-size: 200%;
+    font-size: 1.5rem;
+    margin: 0 0 0.75rem;
 }
 
-h4{
+h4 {
     color: #003b27;
     text-align: center;
 }
 
-a{
+a {
     text-decoration: none;
     color: #003b27;
 }
 
-button:hover {
-    font-size: 15px;
-}
-
 a:hover {
-    font-size: 20px;
+    text-decoration: underline;
 }
 
-.boton-bonito{
-    background-color: #003b27;
-    color: white;
-    padding: 1%;
-}
-
-button{
-    margin-top: 10px;
-    border-radius: 14px;
-}
-
-hr{
+hr {
     width: 70%;
     color: #003b27;
     height: 5px;
     background-color: #003b27;
+    border: none;
 }
 
 /* ============================================================
-   BLOQUE 3: ELEMENTOS SEMÁNTICOS PRINCIPALES
-   Estilos para header, nav, main, section, article, aside y footer.
+   BOTONES —
    ============================================================ */
 
-.generico{
+.boton-bonito {
+    display: inline-block;
+    background-color: #003b27;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 14px;
+    font-size: 0.95rem;
+    border: none;
+    cursor: pointer;
+    min-height: 44px;
+    text-align: center;
+    width: 100%;          /* full-width en móvil */
+    margin-top: 8px;
+}
+
+button {
+    margin-top: 10px;
+    border-radius: 14px;
+    min-height: 44px;
+    padding: 8px 14px;
+    cursor: pointer;
+}
+
+/* ============================================================
+   LAYOUT PRINCIPAL
+   ============================================================ */
+
+.generico {
     text-align: center;
     background-color: white;
-    align-items: center;
-    padding: 10px;
-    border-radius: 20px;
+    padding: 12px;
+    border-radius: 16px;
 }
 
-main{
-    width: 90%;
+main {
+    width: 95%;
     max-width: 1400px;
-    margin: 25px auto;
-    padding: 7px;
+    margin: 14px auto;
+    padding: 4px;
 }
 
 /* ============================================================
-   BLOQUE 4: MENÚ DE NAVEGACIÓN
-   Estilos para nav, nav a y nav a:hover.
+   NAVBAR — Mobile First
    ============================================================ */
 
-nav {
+.navbar-objex {
     background-color: white;
+    padding: 0.5rem 0.8rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-objex .navbar-brand {
+    color: #003b27;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.navbar-objex .nav-link {
+    color: #003b27;
     display: flex;
     align-items: center;
-    gap: 20px;
-    padding: 1%;
+    gap: 6px;
+    font-weight: 500;
+    padding: 0.65rem 0.9rem;
+    border-radius: 10px;
+    transition: background-color 0.2s ease;
+    min-height: 44px;   /* tap target */
 }
 
-.nombre{
-    margin-left: auto;
+.navbar-objex .nav-link:hover {
+    background-color: #ebe6e6;
+    text-decoration: none;
 }
 
-/* ============================================================
-   BLOQUE 5: CONTENIDO Y SECCIONES
-   Estilos para main, section, article y aside.
-   ============================================================ */
+.navbar-objex .nav-link.active {
+    background-color: #003b27;
+    color: white;
+}
 
-/* ============================================================
-   BLOQUE 6: IMÁGENES Y MULTIMEDIA
-   Estilos para img, figure, figcaption, video, audio e iframe.
-   ============================================================ */
+.navbar-objex .nav-link.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
 
+.navbar-objex .navbar-toggler {
+    border: 1px solid #003b27;
+    min-height: 44px;
+    min-width: 44px;
+}
 
+.navbar-objex .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 59, 39, 0.25);
+}
 
-/* ============================================================
-   BLOQUE 7: LISTAS
-   Estilos para ul, ol y li.
-   ============================================================ */
-
-
-
-/* ============================================================
-   BLOQUE 8: FORMULARIOS
-   Estilos para form, label, input, textarea, select y button.
-   ============================================================ */
-
-label{
+/* En móvil el nombre va debajo del menú desplegado */
+.nombre-usuario {
+    color: #003b27;
     font-weight: bold;
-    text-align: center;
+    display: block;
+    padding: 8px 0.9rem;
+    margin-top: 4px;
 }
 
-input, select, textarea{
+/* ============================================================
+   FORMULARIOS — Mobile First
+   ============================================================ */
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+}
+
+input,
+select,
+textarea {
     width: 100%;
-    padding: 9px;
-    margin-top: 15px;
+    padding: 12px;
+    margin-top: 6px;
     border: 1px solid #ccc;
-    font-size: 15px;
+    font-size: 1rem;
     border-radius: 15px;
+    margin-bottom: 14px;
 }
 
-input[type = "checkbox"], input[type="radio"]{
+input[type="checkbox"],
+input[type="radio"] {
     width: auto;
     margin-right: 6px;
+    min-height: auto;
 }
 
-textarea{
+textarea {
     resize: vertical;
+    min-height: 90px;
 }
 
-input:focus, select:focus, textarea:focus{
+input:focus,
+select:focus,
+textarea:focus {
     outline: 2px solid #003b27;
     border-color: #003b27;
 }
 
-input:required, select:required, textarea:required{
+input:required,
+select:required,
+textarea:required {
     border-left: 5px solid #003b27;
 }
 
-form input, select, textarea{
-    margin-bottom: 20px;
-}
-
 /* ============================================================
-   BLOQUE 9: TABLAS
-   Estilos para table, thead, tbody, tr, th y td.
+   TABLAS — scroll horizontal en móvil
    ============================================================ */
 
-th{
+th {
     background-color: #003b27;
     color: white;
     padding: 10px;
+    white-space: nowrap;
 }
 
-td{
+td {
     border: 1px solid #ddd;
-    padding: 10px;
+    padding: 8px;
+    font-size: 0.9rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 /* ============================================================
-   BLOQUE 9: Details.
+   ACCORDION (Bootstrap)
    ============================================================ */
 
-details{
+.accordion-objex {
+    width: 100%;
+    max-width: 800px;
+    margin: 14px auto;
+}
+
+.accordion-objex .accordion-button {
+    color: #003b27;
+    font-weight: bold;
     background-color: #f4f6f8;
-    padding:12px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    margin-bottom: 10px;
+    font-size: 0.95rem;
+    min-height: 44px;
+}
+
+.accordion-objex .accordion-button:not(.collapsed) {
+    background-color: #003b27;
+    color: white;
+}
+
+.accordion-objex .accordion-button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 59, 39, 0.25);
 }
 
 /* ============================================================
-   BLOQUE 10: PIE DE PÁGINA
-   Estilos para footer, footer p y footer address.
+   FOOTER — Mobile First
    ============================================================ */
 
-footer{
+footer {
     background-color: white;
-    padding: 3%;
+    padding: 24px 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 16px;
     text-align: center;
+    margin-top: 20px;
 }
 
-footer p{
+footer p {
     color: rgb(97, 96, 96);
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+/* Links del pie: columna en móvil */
+.pie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+}
+
+.pie h3 {
+    color: #003b27;
+    margin: 0 0 4px;
 }
 
 /* ============================================================
-   BLOQUE 17: RESPONSIVE BÁSICO
-   Cuando la pantalla es pequeña, el menú se acomoda en columna.
-   Esto prepara el camino hacia CSS responsive.
+   TABLET (≥ 768px)
    ============================================================ */
 
-/* Se aplica solo cuando la pantalla mide 700px o menos, normalmente celulares o tablets pequeñas */
-@media (max-width: 700px) {
+@media (min-width: 768px) {
 
-      /* Menú en columna para móvil */
-    nav {
-        flex-direction: column;  /* Coloca elementos uno debajo del otro */
-        gap: 10px;
-        padding: 15px;
-    }
-    
-    nav a {
-        width: 100%;  /* Ocupa todo el ancho */
-        text-align: center;
-        padding: 8px;
-    }
-    
-    .nombre {
-        margin-left: 0;  /*Quita el margen automático */
-        text-align: center;
-    }
-    
-    /* Ajusta el contenido principal */
-    main {
-        width: 95%;
-        margin: 15px auto;
-        padding: 5px;
-    }
-    
-    /* Cards responsivas */
-    .card {
-        width: 90% !important;  /*  Ocupa casi todo el ancho */
-        margin: 10px auto !important;
-        height: auto !important;  /* Altura automática */
-    }
-    
-    /* Contenedor de cards en columna */
-    .contenedor {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    /* Tablas responsivas */
-    table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-        font-size: 12px;
-    }
-    
-    /* Tarjeta de login/registro */
-    .card-login, 
-    .card-perfil,
-    .card-nueva {
-        width: 95%;
-        padding: 20px;
-        margin: 0 auto;
-    }
-    
-    /* Textos más pequeños */
     h2 {
-        font-size: 150%;
+        font-size: 1.8rem;
     }
-    
-    main p {
-        font-size: 100%;
+
+    main {
+        width: 92%;
+        margin: 20px auto;
+        padding: 6px;
     }
-    
-    /* Pie de página en columna */
-    footer {
-        padding: 20px 10px;
+
+    .boton-bonito {
+        width: auto;   /* vuelve a tamaño contenido */
     }
-    
+
+    .nombre-usuario {
+        margin-left: auto;
+        margin-top: 0;
+        padding: 0 0.5rem;
+    }
+
     .pie {
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    td {
+        font-size: 1rem;
+        padding: 10px;
     }
 }
 
+/* ============================================================
+   DESKTOP (≥ 992px)
+   ============================================================ */
+
+@media (min-width: 992px) {
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    main {
+        width: 90%;
+        margin: 25px auto;
+        padding: 7px;
+    }
+
+    footer {
+        padding: 3%;
+        gap: 30px;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+
+    .generico {
+        padding: 14px;
+        border-radius: 20px;
+    }
+}
