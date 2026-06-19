@@ -108,6 +108,7 @@
    ============================================================ */
 
 @media (min-width: 768px) {
+
     .card-perfil {
         width: 460px;
         padding: 32px 28px;
@@ -132,6 +133,11 @@
     .editar {
         width: auto;
     }
+
+    
+    #publicados {
+        display: table;
+    }
 }
 
 /* ============================================================
@@ -148,5 +154,11 @@
         height: 100px;
         width: 100px;
         padding: 7px;
+    }
+
+   
+    #publicados {
+        display: table;
+        width: 100%;
     }
 }
